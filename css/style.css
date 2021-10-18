@@ -72,7 +72,7 @@ header {
         justify-content: space-between;
         position: sticky;
         width: 100%;
-        top: 0;
+        bottom: 0px;
     }
 
     .nav_links {
