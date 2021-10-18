@@ -71,7 +71,6 @@ header {
         flex-direction: row;
         justify-content: space-between;
         position: sticky;
-        width: 100%;
         bottom: 0px;
     }
 
