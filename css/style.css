@@ -1,0 +1,145 @@
+body {
+    font-family: 'Alegreya Sans SC', serif;
+    background-image: url("../images/concrete_seamless.png");
+    background-color: #f1f1f1;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav_item a {
+    color: blue;
+}
+
+.skip a {
+    color: blue;
+}
+
+.nav_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card header {
+    background-color: #288088;;
+    border: 2px solid #45ADAD;
+    padding: 20px 0px;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    flex-basis: 450px;
+}
+
+.gallery * {
+    border: 10px solid #50C7C7;
+    margin: 10px;
+    width: 300px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@keyframes animation {
+    from {width: 50px; opacity: 0;}
+    to {width: 425px ; opacity: 1;}
+}
+  
+#logo {
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+}
+
+@media screen and (min-width: 850px){
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        position: sticky;
+        width: 100%;
+        top: 0;
+    }
+
+    .nav_links {
+        flex-direction: row;
+    }
+
+    .card {
+        flex-basis: 250px;
+    }
+
+    .card header{
+        position: static;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #logo {
+        animation: none
+    }
+}
+
+@media print {
+    .card_big {
+        -webkit-transform: initial;
+        transform: initial;
+    }
+
+    body {
+        background-image: none;
+    }
+
+    header {
+        align-items: stretch;
+    }
+
+    #logo {
+        max-width: 450px;
+        margin: auto;
+    }
+    
+
+    .nav_links  {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .card {
+        flex-basis: 250px;
+        border: 2px solid #45ADDD;
+    }
+
+    .pricing {
+        align-items: flex-end;
+    }
+
+    #gallery, .gallery {
+        display: none;
+    }
+
+    .card li:nth-child(odd)::before {
+        content: "👍";
+        
+    }
+
+    .card li:nth-child(even)::after {
+        content: "👍";
+        
+    }
+    
+}
