@@ -71,7 +71,7 @@ header {
         flex-direction: row;
         justify-content: space-between;
         position: sticky;
-        bottom: 0px;
+        top: 1;
     }
 
     .nav_links {
