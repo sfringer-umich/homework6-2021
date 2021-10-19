@@ -71,7 +71,7 @@ header {
         flex-direction: row;
         justify-content: space-between;
         position: sticky;
-        top: 1;
+        top: 0;
     }
 
     .nav_links {
@@ -84,6 +84,11 @@ header {
 
     .card header{
         position: static;
+    }
+    
+    h1, h2 {
+        padding-top: 150px; 
+	    margin-top: -140px;
     }
 }
 
